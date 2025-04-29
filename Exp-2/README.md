@@ -48,7 +48,7 @@ Follow the steps below to get the app up and running in your local environment.
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/BhavyaDhimxn/container-experiments.git
+git clone https://github.com/kartikbhatt2808/DockerExperiments.git
 cd container-experiments/Exp-2
 ```
 
