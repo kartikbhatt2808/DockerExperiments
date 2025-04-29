@@ -28,9 +28,6 @@ docker swarm init
 
 This command makes your machine the **Swarm Manager**.
 
----
-<img width="1118" alt="Image" src="https://github.com/user-attachments/assets/7f63cc1c-6654-44b2-b674-5f5ceb5a4522" />
-
 ## **Step 2: Project Setup**
 
 ### **📁 Project Structure**
@@ -116,17 +113,9 @@ Navigate to your project directory and build the images:
 docker build -t backend-service ./backend-service
 docker build -t api-gateway ./api-gateway
 ```
-<img width="1102" alt="Image" src="https://github.com/user-attachments/assets/ff8196c2-8189-43d0-ae73-543e4ca5eda2" />
-<img width="1105" alt="Image" src="https://github.com/user-attachments/assets/78808fe4-0563-4b68-86f5-03a123764bcd" />
-
-Verify the built images:
-
 ```bash
 docker images
 ```
-<img width="1105" alt="Image" src="https://github.com/user-attachments/assets/d4426e45-d13a-4c3e-b58e-6771e60c2d5c" />
-
----
 
 ## **Step 5: Create Docker Compose File for Swarm**
 
@@ -174,8 +163,6 @@ Deploy your services to the **Docker Swarm cluster** using:
 ```bash
 docker stack deploy -c docker-compose.yml my_microservices
 ```
-<img width="1103" alt="Image" src="https://github.com/user-attachments/assets/cefc0ba1-1a4d-47d1-a6c1-2295bfedf2f9" />
-
 ---
 
 ## **Step 7: Verify the Deployment**
@@ -191,8 +178,6 @@ List the running containers:
 ```bash
 docker ps
 ```
-<img width="1103" alt="Image" src="https://github.com/user-attachments/assets/941144a2-89e4-45fb-ae79-3e179199a3de" />
-
 ---
 
 ## **Step 8: Access the Microservices**
@@ -207,8 +192,6 @@ Expected output:
 ```
 API Gateway: Vidhi Jaju
 ```
-<img width="1107" alt="Image" src="https://github.com/user-attachments/assets/e46e7897-b9db-48ca-bc17-5126a1010b4f" />
-
 ---
 
 ## **Step 9: Scaling the Services**
@@ -224,7 +207,6 @@ Verify the scaled services:
 ```bash
 docker stack services my_microservices
 ```
-<img width="1104" alt="Image" src="https://github.com/user-attachments/assets/c6f15443-15fe-49ff-9697-91a9cd66e907" />
 
 ---
 
@@ -251,8 +233,6 @@ To **remove the deployed stack**, run:
 ```bash
 docker stack rm my_microservices
 ```
-<img width="1440" alt="Image" src="https://github.com/user-attachments/assets/e78b5e06-a5ac-4815-9f4c-3880077f1b75" />
-
 To **leave Docker Swarm**, run:
 
 ```bash
